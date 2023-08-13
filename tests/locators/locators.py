@@ -105,7 +105,7 @@ class Cart:
     CHECKOUT_BTN = (By.XPATH, '//*[@name="checkout"]')
 
 
-class CheckOutPage:
+class CheckOutPageStepOne:
     CHECKOUT_YOUR_INFO_TITLE = (By.XPATH, "//*[text()='Checkout: Your Information']")
     CANCEL_BTN = (By.XPATH, "//button[@id='cancel']")
     CONTINUE_BTN = (By.XPATH, "//*[@id='continue']")
@@ -114,6 +114,26 @@ class CheckOutPage:
     ZIP_INPUT_FIELD = (By.XPATH, "//input[@id='postal-code']")
     ERROR_MESSAGE = (By.XPATH, '//*[text()="Error: First Name is required"]')
     CLOSE_ERROR_MSG_BTN = (By.XPATH, "//*[@class='error-button']")
+    FIRST_NAME = "Carl"
+    LAST_NAME = "Cox"
 
 
+class CheckOutPageStepTwo:
+    CHECKOUT_OVERVIEW_TITLE = (By.XPATH, "//*[text()='Checkout: Overview']")
+    PAYMENT_INFO_LABEL = (By.XPATH, "//*[text()='Payment Information']")
+    PAYMENT_NUMBER = (By.XPATH, "//div[@class='summary_value_label'][1]")
+    DELIVERY_COMPANY = (By.XPATH, "//*[text()='Free Pony Express Delivery!']")
+    PRICE_TOTAL_LABEL = (By.XPATH, "//*[text()='Price Total']")
+    ITEM_TOTAL_LABEL = (By.XPATH, "//*[text()='Item total: $']")
+    TAX_LABEL = (By.XPATH, "//*[text()='Tax: $']")
+    TOTAL_LABEL = (By.XPATH, "//*[text()='Total: $']")
+    FINISH_BTN = (By.XPATH, "//*[@id='finish']")
 
+
+class CheckOutCompletePage:
+    CHECKOUT_COMPLETE_TITLE = (By.XPATH, "//*[text()='Checkout: Complete!']")
+    CHECKMARK_SIGN = (By.XPATH, "//img[@alt='Pony Express']")
+    THANK_YOU_FOR_YOUR_ORDER_TITLE = (By.XPATH, "//h2[text()='Thank you for your order!']")
+    YOUR_ORDER_DISPATCHED_TITLE = (By.XPATH, "//*[text()='Your order has been dispatched, and will arrive just as "
+                                             "fast as the pony can get there!']")
+    BACK_HOME_BTN = (By.XPATH, "//*[@name='back-to-products']")
