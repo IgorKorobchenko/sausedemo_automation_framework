@@ -2,6 +2,7 @@ from selenium.webdriver.common.by import By
 
 
 class LoginPageLocators:
+    SWAG_LABS_LOGO = (By.XPATH, "//div[@class='login_logo']")
     USER_NAME_FIELD = (By.ID, "user-name")
     PASSWORD_FIELD = (By.ID, "password")
     LOGIN_BTN = (By.ID, "login-button")
@@ -11,6 +12,8 @@ class LoginPageLocators:
     PASSWORD_EMPTY = ""
     USER_NAME_WRONG = "ABBA"
     PASSWORD_WRONG = "BABBA"
+    PASSWORD_IS_REQUIRED_MSG = (By.XPATH, "//*[text()='Epic sadface: Password is required']")
+    USERNAME_IS_REQUIRED_MSG = (By.XPATH, "//*[text()='Epic sadface: Username is required']")
 
 
 class DropDownMenu:
@@ -96,7 +99,7 @@ class InventoryPageLocators:
     ALL_RIGHTS_RESERVED = (By.XPATH, '//*[@class="footer_copy"]')
 
 
-class Cart:
+class ShoppingCart:
     YOUR_CART_TITLE = (By.XPATH, "//*[text()='Your Cart']")
     QTY_LABEL = (By.XPATH, "//*[@class='cart_quantity_label']")
     QTY_FIELD = (By.XPATH, "//div[@class='cart_quantity']")
