@@ -2,10 +2,11 @@ from selenium.webdriver.common.by import By
 
 
 class LoginPageLocators:
+
     SWAG_LABS_LOGO = (By.XPATH, "//div[@class='login_logo']")
     USER_NAME_FIELD = (By.ID, "user-name")
     PASSWORD_FIELD = (By.ID, "password")
-    LOGIN_BTN = (By.ID, "login-button")
+    LOGIN_BTN = (By.XPATH, "//*[@id='login-button']")
     USER_NAME = "standard_user"
     PASSWORD = "secret_sauce"
     USER_NAME_EMPTY = ""
@@ -14,9 +15,12 @@ class LoginPageLocators:
     PASSWORD_WRONG = "BABBA"
     PASSWORD_IS_REQUIRED_MSG = (By.XPATH, "//*[text()='Epic sadface: Password is required']")
     USERNAME_IS_REQUIRED_MSG = (By.XPATH, "//*[text()='Epic sadface: Username is required']")
+    USER_NAME_AND_PASSWORD_ARE_REQUIRED = (By.XPATH, "//*[text()='Epic sadface: Username and password do not match "
+                                                     "any user in this service']")
 
 
 class DropDownMenu:
+
     DROP_DOWN_MENU = (By.XPATH, "//button[@id='react-burger-menu-btn']")
     ALL_ITEMS = (By.XPATH, "//*[text()='All Items']")
     ABOUT = (By.XPATH, "//a[@id='about_sidebar_link']")
@@ -26,8 +30,9 @@ class DropDownMenu:
 
 
 class InventoryPageLocators:
+
     PRODUCTS_TTL = (By.XPATH, "//span[@class='title']")
-    SWAG_LABS_LOGO = (By.XPATH, "//div[@class='app_logo']")
+    SWAG_LABS_LOGO = (By.CSS_SELECTOR, ".app_logo")#(By.XPATH, "//div[text()='Swag Labs']")
     SHOPPING_CART_CONTAINER = (By.ID, "shopping_cart_container")
     SHOPPING_CART_BADGE = (By.XPATH, "//span[@class='shopping_cart_badge']")
     # Filters:
@@ -100,6 +105,7 @@ class InventoryPageLocators:
 
 
 class ShoppingCart:
+
     YOUR_CART_TITLE = (By.XPATH, "//*[text()='Your Cart']")
     QTY_LABEL = (By.XPATH, "//*[@class='cart_quantity_label']")
     QTY_FIELD = (By.XPATH, "//div[@class='cart_quantity']")
@@ -109,6 +115,7 @@ class ShoppingCart:
 
 
 class CheckOutPageStepOne:
+
     CHECKOUT_YOUR_INFO_TITLE = (By.XPATH, "//*[text()='Checkout: Your Information']")
     CANCEL_BTN = (By.XPATH, "//button[@id='cancel']")
     CONTINUE_BTN = (By.XPATH, "//*[@id='continue']")
@@ -122,6 +129,7 @@ class CheckOutPageStepOne:
 
 
 class CheckOutPageStepTwo:
+
     CHECKOUT_OVERVIEW_TITLE = (By.XPATH, "//*[text()='Checkout: Overview']")
     PAYMENT_INFO_LABEL = (By.XPATH, "//*[text()='Payment Information']")
     PAYMENT_NUMBER = (By.XPATH, "//div[@class='summary_value_label'][1]")
@@ -134,6 +142,7 @@ class CheckOutPageStepTwo:
 
 
 class CheckOutCompletePage:
+
     CHECKOUT_COMPLETE_TITLE = (By.XPATH, "//*[text()='Checkout: Complete!']")
     CHECKMARK_SIGN = (By.XPATH, "//img[@alt='Pony Express']")
     THANK_YOU_FOR_YOUR_ORDER_TITLE = (By.XPATH, "//h2[text()='Thank you for your order!']")

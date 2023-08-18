@@ -1,0 +1,186 @@
+1692041076369	geckodriver	INFO	Listening on 127.0.0.1:61006
+1692041076515	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/3b/wh731vzd333b6h0yxlbv09k80000gn/T/rust_mozprofileR5ql6l"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692041078110	Marionette	INFO	Marionette enabled
+2023-08-14 12:24:38.702 plugin-container[24149:19057492] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-08-14 12:24:38.702 plugin-container[24149:19057492] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1692041078707	Marionette	INFO	Listening on port 61019
+Read port: 61019
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+WebDriver BiDi listening on ws://127.0.0.1:61007
+2023-08-14 12:24:39.213 plugin-container[24149:19057492] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-08-14 12:24:39.213 plugin-container[24149:19057492] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-08-14 12:24:39.214 plugin-container[24149:19057496] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-08-14 12:24:39.214 plugin-container[24149:19057496] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1692041079234	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/3b/wh731vzd333b6h0yxlbv09k80000gn/T/rust_mozprofileR5ql6l/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:61007/devtools/browser/e0814bea-039e-4da8-a92e-28413b73b291
+1692041084873	Marionette	INFO	Stopped listening on port 61019
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "quit-application-granted" is finished, it is too late to register completion condition "ContentParent: id=1346ed700"
+JavaScript error: resource://services-settings/Utils.jsm, line 237: TypeError: NetworkError: Network request failed
+1692041232958	geckodriver	INFO	Listening on 127.0.0.1:61099
+1692041233485	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/3b/wh731vzd333b6h0yxlbv09k80000gn/T/rust_mozprofilevNc7L8"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692041234461	Marionette	INFO	Marionette enabled
+1692041234693	Marionette	INFO	Listening on port 61105
+Read port: 61105
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+2023-08-14 12:27:14.791 plugin-container[24237:19059014] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-08-14 12:27:14.792 plugin-container[24237:19059014] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-08-14 12:27:14.800 plugin-container[24237:19059014] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-08-14 12:27:14.800 plugin-container[24237:19059014] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-08-14 12:27:14.800 plugin-container[24237:19059012] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-08-14 12:27:14.800 plugin-container[24237:19059012] nil host used in call to allowsAnyHTTPSCertificateForHost:
+WebDriver BiDi listening on ws://127.0.0.1:61100
+1692041235146	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/3b/wh731vzd333b6h0yxlbv09k80000gn/T/rust_mozprofilevNc7L8/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:61100/devtools/browser/460fc1ea-c2bd-4c63-9bb7-691c24616ecf
+1692041240461	Marionette	INFO	Stopped listening on port 61105
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "quit-application-granted" is finished, it is too late to register completion condition "ContentParent: id=132568b00"
+JavaScript error: resource://services-settings/Utils.jsm, line 237: TypeError: NetworkError: Network request failed
+1692062532803	geckodriver	INFO	Listening on 127.0.0.1:60891
+1692062533326	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/3b/wh731vzd333b6h0yxlbv09k80000gn/T/rust_mozprofilevZLqW4"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692062534556	Marionette	INFO	Marionette enabled
+1692062534829	Marionette	INFO	Listening on port 60930
+Read port: 60930
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+2023-08-14 18:22:15.145 plugin-container[28201:19130262] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-08-14 18:22:15.147 plugin-container[28201:19130262] nil host used in call to allowsAnyHTTPSCertificateForHost:
+WebDriver BiDi listening on ws://127.0.0.1:60892
+1692062535261	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2023-08-14 18:22:15.889 plugin-container[28201:19130262] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-08-14 18:22:15.889 plugin-container[28201:19130262] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-08-14 18:22:15.890 plugin-container[28201:19130263] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-08-14 18:22:15.890 plugin-container[28201:19130263] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/3b/wh731vzd333b6h0yxlbv09k80000gn/T/rust_mozprofilevZLqW4/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:60892/devtools/browser/0dd2e2e7-8965-44d3-8310-6f692210d926
+1692062540401	Marionette	INFO	Stopped listening on port 60930
+JavaScript error: resource://services-settings/Utils.jsm, line 237: TypeError: NetworkError: Network request failed
+1692062580996	geckodriver	INFO	Listening on 127.0.0.1:61168
+1692062581517	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/3b/wh731vzd333b6h0yxlbv09k80000gn/T/rust_mozprofileHxAh5C"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692062582501	Marionette	INFO	Marionette enabled
+1692062582630	Marionette	INFO	Listening on port 61182
+Read port: 61182
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+2023-08-14 18:23:02.746 plugin-container[28250:19131113] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-08-14 18:23:02.747 plugin-container[28250:19131113] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-08-14 18:23:02.773 plugin-container[28250:19131113] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-08-14 18:23:02.773 plugin-container[28250:19131113] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-08-14 18:23:02.774 plugin-container[28250:19131114] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-08-14 18:23:02.774 plugin-container[28250:19131114] nil host used in call to allowsAnyHTTPSCertificateForHost:
+WebDriver BiDi listening on ws://127.0.0.1:61169
+1692062583217	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/3b/wh731vzd333b6h0yxlbv09k80000gn/T/rust_mozprofileHxAh5C/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:61169/devtools/browser/56c3ab95-fc1a-419b-bec6-8c0ad2d02049
+1692062587054	Marionette	INFO	Stopped listening on port 61182
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "quit-application-granted" is finished, it is too late to register completion condition "ContentParent: id=138fb6100"
+JavaScript error: resource://services-settings/Utils.jsm, line 237: TypeError: NetworkError: Network request failed
+1692062760933	geckodriver	INFO	Listening on 127.0.0.1:61959
+1692062761453	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/3b/wh731vzd333b6h0yxlbv09k80000gn/T/rust_mozprofile8hAE8t"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692062762473	Marionette	INFO	Marionette enabled
+2023-08-14 18:26:02.698 plugin-container[28312:19132565] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-08-14 18:26:02.699 plugin-container[28312:19132565] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-08-14 18:26:02.705 plugin-container[28312:19132565] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-08-14 18:26:02.705 plugin-container[28312:19132565] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-08-14 18:26:02.706 plugin-container[28312:19132569] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-08-14 18:26:02.706 plugin-container[28312:19132569] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1692062762901	Marionette	INFO	Listening on port 61977
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+Read port: 61977
+WebDriver BiDi listening on ws://127.0.0.1:61960
+1692062763108	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/3b/wh731vzd333b6h0yxlbv09k80000gn/T/rust_mozprofile8hAE8t/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:61960/devtools/browser/d733860d-17ab-4c48-971d-54993364bd5a
+1692062765974	Marionette	INFO	Stopped listening on port 61977
+JavaScript error: resource://services-settings/Utils.jsm, line 237: TypeError: NetworkError: Network request failed
+1692062793350	geckodriver	INFO	Listening on 127.0.0.1:62135
+1692062793364	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/3b/wh731vzd333b6h0yxlbv09k80000gn/T/rust_mozprofileClF3yt"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692062794265	Marionette	INFO	Marionette enabled
+1692062794395	Marionette	INFO	Listening on port 62147
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+Read port: 62147
+2023-08-14 18:26:34.573 plugin-container[28354:19133188] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-08-14 18:26:34.573 plugin-container[28354:19133188] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-08-14 18:26:34.580 plugin-container[28354:19133188] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-08-14 18:26:34.581 plugin-container[28354:19133188] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-08-14 18:26:34.581 plugin-container[28354:19133185] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-08-14 18:26:34.581 plugin-container[28354:19133185] nil host used in call to allowsAnyHTTPSCertificateForHost:
+WebDriver BiDi listening on ws://127.0.0.1:62136
+1692062795001	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/3b/wh731vzd333b6h0yxlbv09k80000gn/T/rust_mozprofileClF3yt/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:62136/devtools/browser/27b231d3-3181-4e19-9bcd-4a7183bd1014
+1692062799043	Marionette	INFO	Stopped listening on port 62147
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "quit-application-granted" is finished, it is too late to register completion condition "ContentParent: id=1326fc200"
+JavaScript error: resource://services-settings/Utils.jsm, line 237: TypeError: NetworkError: Network request failed
+1692062908294	geckodriver	INFO	Listening on 127.0.0.1:62679
+1692062908809	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/3b/wh731vzd333b6h0yxlbv09k80000gn/T/rust_mozprofileNXqPtm"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692062910281	Marionette	INFO	Marionette enabled
+2023-08-14 18:28:30.729 plugin-container[28448:19134606] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-08-14 18:28:30.731 plugin-container[28448:19134606] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-08-14 18:28:30.745 plugin-container[28448:19134606] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-08-14 18:28:30.745 plugin-container[28448:19134606] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-08-14 18:28:30.746 plugin-container[28448:19134601] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-08-14 18:28:30.746 plugin-container[28448:19134601] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1692062911020	Marionette	INFO	Listening on port 62697
+Read port: 62697
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+WebDriver BiDi listening on ws://127.0.0.1:62680
+1692062911473	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/3b/wh731vzd333b6h0yxlbv09k80000gn/T/rust_mozprofileNXqPtm/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:62680/devtools/browser/089fb37d-135e-478f-967e-4701c9cd74a5
+1692062920252	Marionette	INFO	Stopped listening on port 62697
+JavaScript error: resource://services-settings/Utils.jsm, line 237: TypeError: NetworkError: Network request failed
+1692299614327	geckodriver	INFO	Listening on 127.0.0.1:65023
+1692299614853	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/3b/wh731vzd333b6h0yxlbv09k80000gn/T/rust_mozprofilexq0YPd"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692299616331	Marionette	INFO	Marionette enabled
+2023-08-17 12:13:36.851 plugin-container[32262:19493550] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-08-17 12:13:36.851 plugin-container[32262:19493550] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-08-17 12:13:36.895 plugin-container[32262:19493550] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-08-17 12:13:36.895 plugin-container[32262:19493550] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-08-17 12:13:36.896 plugin-container[32262:19493548] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-08-17 12:13:36.896 plugin-container[32262:19493548] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1692299616917	Marionette	INFO	Listening on port 65050
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+Read port: 65050
+WebDriver BiDi listening on ws://127.0.0.1:65024
+1692299617316	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/3b/wh731vzd333b6h0yxlbv09k80000gn/T/rust_mozprofilexq0YPd/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:65024/devtools/browser/eb4df3a0-6601-41a6-b9f4-c515f7eb06c3
+1692299622877	Marionette	INFO	Stopped listening on port 65050
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 693: TypeError: this.tablesData[table] is undefined
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "quit-application-granted" is finished, it is too late to register completion condition "ContentParent: id=12f41eb00"
+JavaScript error: resource://services-settings/Utils.jsm, line 237: TypeError: NetworkError: Network request failed
+1692299639479	geckodriver	INFO	Listening on 127.0.0.1:65190
+1692299639996	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/3b/wh731vzd333b6h0yxlbv09k80000gn/T/rust_mozprofileBXD1Y1"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692299640974	Marionette	INFO	Marionette enabled
+2023-08-17 12:14:01.208 plugin-container[32308:19494264] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-08-17 12:14:01.209 plugin-container[32308:19494264] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-08-17 12:14:01.215 plugin-container[32308:19494264] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-08-17 12:14:01.215 plugin-container[32308:19494264] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-08-17 12:14:01.216 plugin-container[32308:19494268] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-08-17 12:14:01.216 plugin-container[32308:19494268] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1692299641493	Marionette	INFO	Listening on port 65204
+Read port: 65204
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+WebDriver BiDi listening on ws://127.0.0.1:65191
+1692299641696	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/3b/wh731vzd333b6h0yxlbv09k80000gn/T/rust_mozprofileBXD1Y1/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:65191/devtools/browser/e9605fd2-f93d-4e72-91a9-ee6327515e5f
+1692299646509	Marionette	INFO	Stopped listening on port 65204
+JavaScript error: resource://services-settings/Utils.jsm, line 237: TypeError: NetworkError: Network request failed
