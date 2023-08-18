@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "saucedemoframework"
+version = "0.1.0"
+description = ""
+authors = ["Igor Korobchenko <korobchenko.igor@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10.4"
+selenium = "^4.11.2"
+webdriver-manager = "^4.0.0"
+chromedriver = "^115.0.5790.102"
+pytest = "^7.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
