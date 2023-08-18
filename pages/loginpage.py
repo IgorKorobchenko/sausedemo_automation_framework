@@ -42,4 +42,16 @@ class LoginPage(BasePage):
         self.element_is_present(self.locators.LOGIN_BTN).click()
         assert self.element_is_present(self.locators.USER_NAME_AND_PASSWORD_ARE_REQUIRED)
 
+    def login_with_empty_username_and_password_fields(self):
+        self.element_is_present(self.locators.USER_NAME_FIELD).send_keys(self.locators.USER_NAME_EMPTY)
+        self.element_is_present(self.locators.PASSWORD_FIELD).send_keys(self.locators.PASSWORD_EMPTY)
+        self.element_is_present(self.locators.LOGIN_BTN).click()
+        assert self.element_is_present(self.locators.USERNAME_IS_REQUIRED_MSG)
+
+    def login_with_correct_username_and_empty_password_field(self):
+        self.element_is_present(self.locators.USER_NAME_FIELD).send_keys(self.locators.USER_NAME)
+        self.element_is_present(self.locators.PASSWORD_FIELD).send_keys(self.locators.PASSWORD_EMPTY)
+        self.element_is_present(self.locators.LOGIN_BTN).click()
+        assert self.element_is_present(self.locators.PASSWORD_IS_REQUIRED_MSG)
+
 

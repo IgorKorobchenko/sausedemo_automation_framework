@@ -45,6 +45,7 @@ def test_login_with_correct_username_and_wrong_password(driver):
     page.open_page()
     page.login_with_correct_username_and_wrong_password()
 
+
 """TC_01.05 Make sure that the user is not able to log in with wrong username and correct password"""
 
 
@@ -53,8 +54,20 @@ def test_login_with_wrong_username_and_correct_password(driver):
     page.open_page()
     page.login_with_wrong_username_and_correct_password()
 
+
 """TC_01.06 Make sure that the user is not able to log in with empty username and password fields"""
 
-"""TC_01.07 Make sure that the user is not able to log in with empty username field and correct password"""
 
-"""TC_01.08 Make sure that the user is not able to log in with correct username and empty password field"""
+def test_login_with_empty_username_and_password_fields(driver):
+    page = LoginPage(driver, URL)
+    page.open_page()
+    page.login_with_empty_username_and_password_fields()
+
+
+"""TC_01.07 Make sure that the user is not able to log in with correct username and empty password field"""
+
+
+def test_login_with_correct_username_and_empty_password_field(driver):
+    page = LoginPage(driver, URL)
+    page.open_page()
+    page.login_with_correct_username_and_empty_password_field()
