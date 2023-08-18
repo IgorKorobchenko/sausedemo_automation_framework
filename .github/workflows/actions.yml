@@ -17,5 +17,6 @@ jobs:
       - name: Firefox version
         run: firefox --version
       - name: Run pytest
-        run: pytest
+        run: |
+          pytest
 #test
