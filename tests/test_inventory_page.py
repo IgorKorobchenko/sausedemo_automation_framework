@@ -1,6 +1,27 @@
+import allure
+
+from pages.inventorypage import InventoryPage
+from pages.basepage import URL
+
 """TC_02.01 Make sure that the drop-down menu is present"""
 
+
+@allure.feature('Test that the drop-down menu is present')
+def test_drop_down_menu_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.drop_down_menu_is_present()
+
+
 """TC_02.02 Make sure that the Swag Labs logo is present"""
+
+
+@allure.feature('Test that the Swag Labs logo is present')
+def test_swag_labs_logo_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.swag_labs_logo_is_present()
+
 
 """TC_02.03 Make sure that the shopping cart container sign is present"""
 

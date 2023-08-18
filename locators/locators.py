@@ -32,7 +32,7 @@ class DropDownMenu:
 class InventoryPageLocators:
 
     PRODUCTS_TTL = (By.XPATH, "//span[@class='title']")
-    SWAG_LABS_LOGO = (By.CSS_SELECTOR, ".app_logo")#(By.XPATH, "//div[text()='Swag Labs']")
+    SWAG_LABS_LOGO = (By.XPATH, "//div[text()='Swag Labs']")
     SHOPPING_CART_CONTAINER = (By.ID, "shopping_cart_container")
     SHOPPING_CART_BADGE = (By.XPATH, "//span[@class='shopping_cart_badge']")
     # Filters:
