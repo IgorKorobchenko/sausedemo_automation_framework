@@ -37,7 +37,7 @@ def driver():
     options = Options()
     options.add_argument("start-maximized")
     options.headless = False
-    driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager).install())
+    driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager))
     yield driver
     driver.quit()
 
