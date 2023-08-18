@@ -9,7 +9,7 @@ readme = "README.md"
 python = "^3.10.4"
 selenium = "^4.11.2"
 webdriver-manager = "^4.0.0"
-chromedriver = "^4.11.0"
+chromedriver = "^4.10.0"
 pytest = "^7.4.0"
 
 
