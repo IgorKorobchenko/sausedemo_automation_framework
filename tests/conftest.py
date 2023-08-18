@@ -38,8 +38,8 @@ def driver():
     options.add_argument("start-maximized")
     options.headless = False
     # driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager).install())
-    yield driver
-    driver.quit()
+    # yield driver
+    # driver.quit()
 
 
 """Fixture for running tests on Edge Browser"""
