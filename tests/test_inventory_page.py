@@ -1,10 +1,9 @@
-
+import time
 
 from pages.inventorypage import InventoryPage
 from pages.basepage import URL
 
 """TC_02.01 Make sure that the drop-down menu is present"""
-
 
 
 def test_drop_down_menu_is_present(driver):
@@ -16,7 +15,6 @@ def test_drop_down_menu_is_present(driver):
 """TC_02.02 Make sure that the Swag Labs logo is present"""
 
 
-
 def test_swag_labs_logo_is_present(driver):
     page = InventoryPage(driver, URL)
     page.open_page()
@@ -25,31 +23,118 @@ def test_swag_labs_logo_is_present(driver):
 
 """TC_02.03 Make sure that the shopping cart container sign is present"""
 
+
+def test_shopping_cart_container_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.shopping_cart_container_is_present()
+
+
 """TC_02.03.01 Make sure that the user will be redirected to the shopping cart page after clicking on the cart sign """
+
+
+def test_user_is_able_to_launch_shopping_cart(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.go_to_shopping_cart()
+
 
 """TC_02.04 Make sure that the "Products" title is present"""
 
+
+def test_products_title_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.products_title_is_present()
+
+
 """TC_02.05 Make sure that the filter is present"""
+
+
+def test_filer_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.filer_is_present()
+
 
 """TC_02.06.01 Make sure that the Sauce Labs Backpack image is present"""
 
+
+def test_backpack_image_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.backpack_image_is_present()
+
+
 """TC_02.06.02 Make sure that the Sauce Labs Backpack title is present"""
+
+
+def test_backpack_title_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.backpack_title_is_present()
+
 
 """TC_02.06.03 Make sure that the Sauce Labs Backpack product description is present"""
 
+
+def test_backpack_product_description_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.backpack_product_description_is_present()
+
+
 """TC_02.06.04 Make sure that the Sauce Labs Backpack price is present"""
+
+
+def test_backpack_price_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.backpack_price_is_present()
+
 
 """TC_02.06.05 Make sure that Add to cart button is present for the Sauce Labs Backpack"""
 
+
+def test_backpack_add_to_cart_btn_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.backpack_add_btn_is_present()
+
+
 """TC_02.06.06 Make sure that the user is able to add the Sauce Labs Backpack to the shopping cart"""
 
-"""TC_02.06.07 Make sure that the user is able to remove the Sauce Labs Backpack from the shopping cart"""
+
+def test_add_backpack_to_cart(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.add_backpack_to_cart()
+
 
 """TC_02.07.01 Make sure that the Sauce Labs Bike light image is present"""
 
+
+def test_bike_light_image_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.bike_light_image_is_present()
+
+
 """TC_02.07.02 Make sure that the Sauce Labs Bike light title is present"""
 
+
+def test_bike_light_title_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.bike_light_title_is_present()
+
 """TC_02.07.03 Make sure that the Sauce Labs Bike light product description is present"""
+
+
+def test_bike_light_product_description_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.bike_light_product_description_is_present()
 
 """TC_02.07.04 Make sure that the Sauce Labs Bike light price is present"""
 

@@ -8,18 +8,21 @@ from webdriver_manager.microsoft import EdgeChromiumDriverManager
 
 """Fixture for running tests on Chrome Browser"""
 
-# @pytest.fixture(scope='session')
-# def driver():
-#     options = Options()
-#     options.add_argument("start-maximized")
-#     options.headless = False
-#     driver = webdriver.Chrome(options=options)
-#     yield driver
-#     driver.quit()
+
+@pytest.fixture(scope='session')
+def driver():
+    options = Options()
+    options.add_argument("start-maximized")
+    options.headless = False
+    driver = webdriver.Chrome(options=options)
+    yield driver
+    driver.quit()
 
 
 """Fixture for running tests on Safari Browser.
 Don't forgot to go to the Develop menu, and turn on the Allow Remote Automation option on your Safari browser"""
+
+
 # @pytest.fixture(scope='session')
 # def driver():
 #     options = Options()
@@ -29,17 +32,17 @@ Don't forgot to go to the Develop menu, and turn on the Allow Remote Automation 
 #     yield driver
 #     driver.quit()
 
+
 """Fixture for running tests on Firefox Browser"""
 
-
-@pytest.fixture(scope='session')
-def driver():
-    options = Options()
-    options.add_argument("start-maximized")
-    options.headless = False
-    # driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager).install())
-    # yield driver
-    # driver.quit()
+# @pytest.fixture(scope='session')
+# def driver():
+#     options = Options()
+#     options.add_argument("start-maximized")
+#     options.headless = False
+#     driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager).install())
+#     yield driver
+#     driver.quit()
 
 
 """Fixture for running tests on Edge Browser"""
