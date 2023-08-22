@@ -52,9 +52,7 @@ class InventoryPageLocators:
     BACKPACK_PRICE = (By.XPATH, "(//div[@class = 'inventory_item_price'])[1]")
 
     BIKE_LIGHT_NAME = (By.XPATH, "//*[text()='Sauce Labs Bike Light']")
-    BIKE_LIGHT_PRODUCT_DESCRIPTION = (By.XPATH, "//*[text()='A red light isn't the desired state in testing but it "
-                                                "sure helps when riding your bike at night. Water-resistant with 3 "
-                                                "lighting modes, 1 AAA battery included.']")
+    BIKE_LIGHT_PRODUCT_DESCRIPTION = (By.XPATH, "//*[contains(text(), 'A red light')]")
     BIKE_LIGHT_IMG = (By.XPATH, "//img[@alt='Sauce Labs Bike Light']")
     BIKE_LIGHT_ADD_TO_CART_BTN = (By.XPATH, "//*[@id='add-to-cart-sauce-labs-bike-light']")
     BIKE_LIGHT_REMOVE_BTN = (By.XPATH, "//*[@id='remove-sauce-labs-bike-light']")
@@ -70,18 +68,16 @@ class InventoryPageLocators:
     T_SHIRT_BOLT_PRICE = (By.XPATH, "(//div[@class = 'inventory_item_price'])[3]")
 
     FLEECE_JACKET_NAME = (By.XPATH, "//*[text()='Sauce Labs Fleece Jacket']")
-    FLEECE_JACKET_PRODUCT_DESCRIPTION = (By.XPATH, "//*[text()='It's not every day that you come across a midweight "
-                                                   "quarter-zip fleece jacket capable of handling everything from a "
-                                                   "relaxing day outdoors to a busy day at the office.']")
+    FLEECE_JACKET_PRODUCT_DESCRIPTION = (By.XPATH, "//*[contains(text(), 'fleece jacket capable of handling "
+                                                   "everything')]")
     FLEECE_JACKET_IMG = (By.XPATH, "//img[@alt='Sauce Labs Fleece Jacket']")
     FLEECE_JACKET_ADD_TO_CART_BTN = (By.XPATH, "//*[@id='add-to-cart-sauce-labs-fleece-jacket']")
     FLEECE_JACKET_REMOVE_BTN = (By.XPATH, "//*[@id='remove-sauce-labs-fleece-jacket']")
     FLEECE_JACKET_PRICE = (By.XPATH, "(//div[@class = 'inventory_item_price'])[4]")
 
     ONESIE_NAME = (By.XPATH, "//*[text()='Sauce Labs Onesie']")
-    ONESIE_PRODUCT_DESCRIPTION = (By.XPATH, "//*[text()='Rib snap infant onesie for the junior automation engineer in "
-                                            "development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved "
-                                            "and bottom won't unravel.']")
+    ONESIE_PRODUCT_DESCRIPTION = (By.XPATH, "//*[contains(text(), 'Rib snap infant onesie for the junior automation "
+                                            "engineer in development')]")
     ONESIE_NAME_IMG = (By.XPATH, "//img[@alt='Sauce Labs Onesie']")
     ONESIE_NAME_ADD_TO_CART_BTN = (By.XPATH, "//*[@id='add-to-cart-sauce-labs-onesie']")
     ONESIE_NAME_REMOVE_BTN = (By.XPATH, "//*[@id='remove-sauce-labs-onesie']")

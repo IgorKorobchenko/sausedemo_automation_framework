@@ -77,6 +77,120 @@ class InventoryPage(LoginPage):
         self.go_to_inventory_page()
         assert self.element_is_present(self.inventory_locators.BIKE_LIGHT_PRODUCT_DESCRIPTION)
 
+    def bike_light_price_is_present(self):
+        self.go_to_inventory_page()
+        assert self.element_is_present(self.inventory_locators.BIKE_LIGHT_PRICE)
+
+    def bike_light_add_btn_is_present(self):
+        self.go_to_inventory_page()
+        assert self.element_is_present(self.inventory_locators.BIKE_LIGHT_ADD_TO_CART_BTN)
+
+    def add_bike_light_to_cart(self):
+        self.go_to_inventory_page()
+        self.element_is_present(self.inventory_locators.BIKE_LIGHT_ADD_TO_CART_BTN).click()
+        assert self.element_is_present(self.inventory_locators.SHOPPING_CART_BADGE)
+
+    def t_shirt_image_is_present(self):
+        self.go_to_inventory_page()
+        assert self.element_is_present(self.inventory_locators.T_SHIRT_BOLT_IMG)
+
+    def t_shirt_title_is_present(self):
+        self.go_to_inventory_page()
+        assert self.element_is_present(self.inventory_locators.T_SHIRT_BOLT_NAME)
+
+    def t_shirt_product_description_is_present(self):
+        self.go_to_inventory_page()
+        assert self.element_is_present(self.inventory_locators.T_SHIRT_BOLT_PRODUCT_DESCRIPTION)
+
+    def t_shirt_price_is_present(self):
+        self.go_to_inventory_page()
+        assert self.element_is_present(self.inventory_locators.T_SHIRT_BOLT_PRICE)
+
+    def add_t_shirt_btn_is_present(self):
+        self.go_to_inventory_page()
+        assert self.element_is_present(self.inventory_locators.T_SHIRT_BOLT_ADD_TO_CART_BTN)
+
+    def add_t_shirt_to_cart(self):
+        self.go_to_inventory_page()
+        self.element_is_present(self.inventory_locators.T_SHIRT_BOLT_ADD_TO_CART_BTN).click()
+        assert self.element_is_present(self.inventory_locators.SHOPPING_CART_BADGE)
+
+    def fleece_jacket_image_is_present(self):
+        self.go_to_inventory_page()
+        assert self.element_is_present(self.inventory_locators.FLEECE_JACKET_IMG)
+
+    def fleece_jacket_title_is_present(self):
+        self.go_to_inventory_page()
+        assert self.element_is_present(self.inventory_locators.FLEECE_JACKET_NAME)
+
+    def fleece_jacket_product_description_is_present(self):
+        self.go_to_inventory_page()
+        assert self.element_is_present(self.inventory_locators.FLEECE_JACKET_PRODUCT_DESCRIPTION)
+
+    def fleece_jacket_price_is_present(self):
+        self.go_to_inventory_page()
+        assert self.element_is_present(self.inventory_locators.FLEECE_JACKET_PRICE)
+
+    def add_fleece_jacket_btn_is_present(self):
+        self.go_to_inventory_page()
+        assert self.element_is_present(self.inventory_locators.FLEECE_JACKET_ADD_TO_CART_BTN)
+
+    def add_fleece_jacket_to_cart(self):
+        self.go_to_inventory_page()
+        self.element_is_present(self.inventory_locators.FLEECE_JACKET_ADD_TO_CART_BTN).click()
+        assert self.element_is_present(self.inventory_locators.SHOPPING_CART_BADGE)
+
+    def onesie_image_is_present(self):
+        self.go_to_inventory_page()
+        assert self.element_is_present(self.inventory_locators.ONESIE_NAME_IMG)
+
+    def onesie_title_is_present(self):
+        self.go_to_inventory_page()
+        assert self.element_is_present(self.inventory_locators.ONESIE_NAME)
+
+    def onesie_product_description_is_present(self):
+        self.go_to_inventory_page()
+        assert self.element_is_present(self.inventory_locators.ONESIE_PRODUCT_DESCRIPTION)
+
+    def onesie_price_is_present(self):
+        self.go_to_inventory_page()
+        assert self.element_is_present(self.inventory_locators.ONESIE_PRICE)
+
+    def add_onesie_btn_is_present(self):
+        self.go_to_inventory_page()
+        assert self.element_is_present(self.inventory_locators.ONESIE_NAME_ADD_TO_CART_BTN)
+
+    def add_onesie_to_cart(self):
+        self.go_to_inventory_page()
+        self.element_is_present(self.inventory_locators.ONESIE_NAME_ADD_TO_CART_BTN).click()
+        assert self.element_is_present(self.inventory_locators.SHOPPING_CART_BADGE)
+
+    def all_things_t_shirt_image_is_present(self):
+        self.go_to_inventory_page()
+        assert self.element_is_present(self.inventory_locators.T_SHIRT_TEST_ALL_THE_THINGS_IMG)
+
+    def all_things_t_shirt_title_is_present(self):
+        self.go_to_inventory_page()
+        assert self.element_is_present(self.inventory_locators.T_SHIRT_TEST_ALL_THE_THINGS_NAME)
+
+    def all_things_t_shirt_product_description_is_present(self):
+        self.go_to_inventory_page()
+        assert self.element_is_present(self.inventory_locators.T_SHIRT_TEST_ALL_THE_THINGS_PRODUCT_DESCRIPTION)
+
+    def all_things_t_shirt_price_is_present(self):
+        self.go_to_inventory_page()
+        assert self.element_is_present(self.inventory_locators.T_SHIRT_TEST_ALL_THE_THINGS_PRICE)
+
+    def add_all_things_t_shirt_btn_is_present(self):
+        self.go_to_inventory_page()
+        assert self.element_is_present(self.inventory_locators.T_SHIRT_TEST_ALL_THE_THINGS_ADD_TO_CART_BTN)
+
+    def add_all_things_t_shirt_to_cart(self):
+        self.go_to_inventory_page()
+        self.element_is_present(self.inventory_locators.T_SHIRT_TEST_ALL_THE_THINGS_ADD_TO_CART_BTN).click()
+        assert self.element_is_present(self.inventory_locators.SHOPPING_CART_BADGE)
+
+
 
 
 

@@ -128,6 +128,7 @@ def test_bike_light_title_is_present(driver):
     page.open_page()
     page.bike_light_title_is_present()
 
+
 """TC_02.07.03 Make sure that the Sauce Labs Bike light product description is present"""
 
 
@@ -136,71 +137,250 @@ def test_bike_light_product_description_is_present(driver):
     page.open_page()
     page.bike_light_product_description_is_present()
 
+
 """TC_02.07.04 Make sure that the Sauce Labs Bike light price is present"""
+
+
+def test_bike_light_price_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.bike_light_price_is_present()
+
 
 """TC_02.07.05 Make sure that Add to cart button is present for the Sauce Labs Bike light"""
 
+
+def test_bike_light_add_btn_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.bike_light_add_btn_is_present()
+
+
 """TC_02.07.06 Make sure that the user is able to add the Sauce Labs Bike light to the shopping cart"""
 
-"""TC_02.07.07 Make sure that the user is able to remove the Sauce Labs Bike light from the shopping cart"""
+
+def test_add_bike_light_to_cart(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.add_bike_light_to_cart()
+
 
 """TC_02.08.01 Make sure that the Sauce Labs Bolt T-Shirt image is present"""
 
+
+def test_t_shirt_image_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.t_shirt_image_is_present()
+
+
 """TC_02.08.02 Make sure that the Sauce Labs Bolt T-Shirt title is present"""
+
+
+def test_t_shirt_title_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.t_shirt_title_is_present()
+
 
 """TC_02.08.03 Make sure that the Sauce Labs Bolt T-Shirt product description is present"""
 
+
+def test_t_shirt_product_description_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.t_shirt_product_description_is_present()
+
+
 """TC_02.08.04 Make sure that the Sauce Labs Bolt T-Shirt price is present"""
+
+
+def test_t_shirt_price_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.t_shirt_price_is_present()
+
 
 """TC_02.08.05 Make sure that Add to cart button is present for the Sauce Labs Bolt T-Shirt"""
 
+
+def test_add_t_shirt_add_btn_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.add_t_shirt_btn_is_present()
+
+
 """TC_02.08.06 Make sure that the user is able to add the Sauce Labs Bolt T-Shirt to the shopping cart"""
 
-"""TC_02.08.07 Make sure that the user is able to remove the Sauce Labs Bolt T-Shirt from the shopping cart"""
+
+def test_add_t_shirt_to_cart(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.add_t_shirt_to_cart()
+
 
 """TC_02.09.01 Make sure that the Sauce Labs Fleece Jacket image is present"""
 
+
+def test_fleece_jacket_image_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.fleece_jacket_image_is_present()
+
+
 """TC_02.09.02 Make sure that the Sauce Labs Fleece Jacket title is present"""
+
+
+def test_fleece_jacket_title_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.t_shirt_title_is_present()
+
 
 """TC_02.09.03 Make sure that the Sauce Labs Fleece Jacket product description is present"""
 
+
+def test_fleece_jacket_product_description_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.fleece_jacket_product_description_is_present()
+
+
 """TC_02.09.04 Make sure that the Sauce Labs Fleece Jacket price is present"""
+
+
+def test_fleece_jacket_price_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.fleece_jacket_price_is_present()
+
 
 """TC_02.09.05 Make sure that Add to cart button is present for the Sauce Labs Fleece Jacket"""
 
+
+def test_add_fleece_jacket_btn_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.add_fleece_jacket_btn_is_present()
+
+
 """TC_02.09.06 Make sure that the user is able to add the Sauce Labs Fleece Jacket to the shopping cart"""
 
-"""TC_02.09.07 Make sure that the user is able to remove the Sauce Labs Fleece Jacket from the shopping cart"""
+
+def test_add_fleece_jacket_to_cart(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.add_fleece_jacket_to_cart()
+
 
 """TC_02.10.01 Make sure that the Sauce Labs Onesie image is present"""
 
+
+def test_onesie_image_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.onesie_image_is_present()
+
+
 """TC_02.10.02 Make sure that the Sauce Labs Onesie title is present"""
+
+
+def test_onesie_title_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.onesie_title_is_present()
+
 
 """TC_02.10.03 Make sure that the Sauce Labs Onesie product description is present"""
 
+
+def test_onesie_product_description_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.onesie_product_description_is_present()
+
+
 """TC_02.10.04 Make sure that the Sauce Labs Onesie price is present"""
+
+
+def test_onesie_price_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.onesie_price_is_present()
+
 
 """TC_02.10.05 Make sure that Add to cart button is present for the Sauce Labs Onesie"""
 
+
+def test_add_onesie_btn_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.add_onesie_btn_is_present()
+
+
 """TC_02.10.06 Make sure that the user is able to add the Sauce Labs Onesie to the shopping cart"""
 
-"""TC_02.10.07 Make sure that the user is able to remove the Sauce Labs Onesie from the shopping cart"""
+
+def test_add_onesie_to_cart(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.add_onesie_to_cart()
+
 
 """TC_02.11.01 Make sure that the Sauce Labs Test.allThings() T-Shirt(Red) image is present"""
 
+
+def test_all_things_t_shirt_image_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.all_things_t_shirt_image_is_present()
+
+
 """TC_02.11.02 Make sure that the Sauce Labs Test.allThings() T-Shirt(Red) title is present"""
+
+
+def test_all_things_t_shirt_title_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.all_things_t_shirt_title_is_present()
+
 
 """TC_02.11.03 Make sure that the Sauce Labs Test.allThings() T-Shirt(Red) product description is present"""
 
+
+def test_all_things_t_shirt_product_description_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.all_things_t_shirt_product_description_is_present()
+
+
 """TC_02.11.04 Make sure that the Sauce Labs Test.allThings() T-Shirt(Red) price is present"""
 
+
+def test_all_things_t_shirt_price_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.all_things_t_shirt_price_is_present()
+
+
 """TC_02.11.05 Make sure that Add to cart button is present for the Sauce Labs Test.allThings() T-Shirt(Red)"""
+
+
+def test_add_all_things_t_shirt_btn_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.add_all_things_t_shirt_btn_is_present()
+
 
 """TC_02.11.06 Make sure that the user is able to add the Sauce Labs Test.allThings() T-Shirt(Red) to the shopping 
 cart """
 
-"""TC_02.11.07 Make sure that the user is able to remove the Sauce Labs Test.allThings() T-Shirt(Red) from the 
-shopping cart """
+
+def test_add_all_things_t_shirt_to_cart(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.add_all_things_t_shirt_to_cart()
+
 
 """TC_02.12.01 Make sure that the Twitter icon is present"""
 
