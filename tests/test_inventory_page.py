@@ -384,23 +384,77 @@ def test_add_all_things_t_shirt_to_cart(driver):
 
 """TC_02.12.01 Make sure that the Twitter icon is present"""
 
+
+def test_twitter_icon_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.twitter_icon_is_present()
+
+
 """TC_02.12.02 Make sure that the Facebook icon is present"""
+
+
+def test_facebook_icon_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.facebook_icon_is_present()
+
 
 """TC_02.12.03 Make sure that the Linkedin icon is present"""
 
-"""TC_02.12.02 Make sure that the Facebook icon is present"""
+
+def test_linkedin_icon_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.linkedin_icon_is_present()
+
 
 """TC_02.12.02 Make sure that All rights reserved. Terms of Service|Privacy Policy title is present"""
+
+
+def test_all_rights_reserved_is_present(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.all_rights_reserved_is_present()
+
 
 """TC_02.13.01 Make sure that the badge with the quantity of items appears is present when an item added to the 
 shopping cart """
 
+
+def test_add_one_item_to_cart(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.add_one_item_to_cart()
+
+
 """TC_02.13.02 Make sure that the badge with the number of items is changed after removing items from the shopping 
 cart """
 
+
+def test_correct_number_of_items_in_cart_after_removing(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.correct_number_of_items_in_cart_when_removed()
+
+
 """TC_02.14.01 Make sure that the user is able to add all present items to the shopping cart"""
 
+
+def test_add_all_items_to_cart(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.add_all_items_to_cart()
+
+
 """TC_02.14.02 Make sure that the user is able to remove all present items to the shopping cart"""
+
+
+def test_remove_all_items(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.remove_all_items()
+
 
 """TC_02.15.01 Make sure that all items can be filtered from A to Z"""
 

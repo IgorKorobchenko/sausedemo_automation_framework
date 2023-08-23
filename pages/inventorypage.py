@@ -1,3 +1,5 @@
+import time
+
 from .basepage import BasePage, URL
 from .loginpage import LoginPage
 from locators.locators import LoginPageLocators
@@ -189,6 +191,63 @@ class InventoryPage(LoginPage):
         self.go_to_inventory_page()
         self.element_is_present(self.inventory_locators.T_SHIRT_TEST_ALL_THE_THINGS_ADD_TO_CART_BTN).click()
         assert self.element_is_present(self.inventory_locators.SHOPPING_CART_BADGE)
+
+    def twitter_icon_is_present(self):
+        self.go_to_inventory_page()
+        assert self.element_is_present(self.inventory_locators.TWITTER_LINK)
+
+    def facebook_icon_is_present(self):
+        self.go_to_inventory_page()
+        assert self.element_is_present(self.inventory_locators.FACEBOOK_LINK)
+
+    def linkedin_icon_is_present(self):
+        self.go_to_inventory_page()
+        assert self.element_is_present(self.inventory_locators.LINKEDIN_LINK)
+
+    def all_rights_reserved_is_present(self):
+        self.go_to_inventory_page()
+        assert self.element_is_present(self.inventory_locators.ALL_RIGHTS_RESERVED)
+
+    def add_one_item_to_cart(self):
+        self.add_all_things_t_shirt_to_cart()
+        self.element_is_present(self.inventory_locators.FLEECE_JACKET_ADD_TO_CART_BTN).click()
+        assert self.element_is_present(self.inventory_locators.TWO_ITEMS_IN_CART)
+
+    def add_all_items_to_cart(self):
+        self.go_to_inventory_page()
+        self.element_is_present(self.inventory_locators.BACKPACK_ADD_TO_CART_BTN).click()
+        self.element_is_present(self.inventory_locators.BIKE_LIGHT_ADD_TO_CART_BTN).click()
+        self.element_is_present(self.inventory_locators.T_SHIRT_BOLT_ADD_TO_CART_BTN).click()
+        self.element_is_present(self.inventory_locators.FLEECE_JACKET_ADD_TO_CART_BTN).click()
+        self.element_is_present(self.inventory_locators.ONESIE_NAME_ADD_TO_CART_BTN).click()
+        self.element_is_present(self.inventory_locators.T_SHIRT_TEST_ALL_THE_THINGS_ADD_TO_CART_BTN).click()
+        assert self.element_is_present(self.inventory_locators.SIX_ITEMS_IN_CART)
+
+    def correct_number_of_items_in_cart_when_removed(self):
+        self.add_all_items_to_cart()
+        self.element_is_present(self.inventory_locators.ONESIE_NAME_REMOVE_BTN).click()
+        assert self.element_is_present(self.inventory_locators.FIVE_ITEMS_IN_CART)
+
+    def remove_all_items(self):
+        self.add_all_items_to_cart()
+        self.element_is_present(self.inventory_locators.BACKPACK_REMOVE_BTN).click()
+        time.sleep(1)
+        self.element_is_present(self.inventory_locators.BIKE_LIGHT_REMOVE_BTN).click()
+        time.sleep(1)
+        self.element_is_present(self.inventory_locators.T_SHIRT_BOLT_REMOVE_BTN).click()
+        time.sleep(1)
+        self.element_is_present(self.inventory_locators.FLEECE_JACKET_REMOVE_BTN).click()
+        time.sleep(1)
+        self.element_is_present(self.inventory_locators.ONESIE_NAME_REMOVE_BTN).click()
+        time.sleep(1)
+        self.element_is_present(self.inventory_locators.T_SHIRT_TEST_ALL_THE_THINGS_REMOVE_BTN).click()
+        assert self.element_is_present(self.inventory_locators.SHOPPING_CART_CONTAINER)
+
+
+
+
+
+
 
 
 

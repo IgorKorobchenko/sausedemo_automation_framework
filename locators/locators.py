@@ -35,6 +35,13 @@ class InventoryPageLocators:
     SWAG_LABS_LOGO = (By.XPATH, "//div[text()='Swag Labs']")
     SHOPPING_CART_CONTAINER = (By.ID, "shopping_cart_container")
     SHOPPING_CART_BADGE = (By.XPATH, "//span[@class='shopping_cart_badge']")
+    ONE_ITEM_IN_CART = (By.XPATH, "//span[@class='shopping_cart_badge' and text()='1']")
+    TWO_ITEMS_IN_CART = (By.XPATH, "//span[@class='shopping_cart_badge' and text()='2']")
+    THREE_ITEMS_IN_CART = (By.XPATH, "//span[@class='shopping_cart_badge' and text()='3']")
+    FOUR_ITEMS_IN_CART = (By.XPATH, "//span[@class='shopping_cart_badge' and text()='4']")
+    FIVE_ITEMS_IN_CART = (By.XPATH, "//span[@class='shopping_cart_badge' and text()='5']")
+    SIX_ITEMS_IN_CART = (By.XPATH, "//span[@class='shopping_cart_badge' and text()='6']")
+
     # Filters:
     NAME_A_Z = (By.CSS_SELECTOR, 'option[value="az"]')
     NAME_Z_A = (By.CSS_SELECTOR, 'option[value="za"]')
@@ -50,6 +57,7 @@ class InventoryPageLocators:
     BACKPACK_ADD_TO_CART_BTN = (By.XPATH, "//*[@id='add-to-cart-sauce-labs-backpack']")
     BACKPACK_REMOVE_BTN = (By.XPATH, "//*[@id='remove-sauce-labs-backpack']")
     BACKPACK_PRICE = (By.XPATH, "(//div[@class = 'inventory_item_price'])[1]")
+
 
     BIKE_LIGHT_NAME = (By.XPATH, "//*[text()='Sauce Labs Bike Light']")
     BIKE_LIGHT_PRODUCT_DESCRIPTION = (By.XPATH, "//*[contains(text(), 'A red light')]")
