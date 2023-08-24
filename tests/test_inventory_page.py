@@ -458,16 +458,70 @@ def test_remove_all_items(driver):
 
 """TC_02.15.01 Make sure that all items can be filtered from A to Z"""
 
+
+def test_sort_items_a_to_z(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.sort_items_a_to_z()
+
+
 """TC_02.15.02 Make sure that all items can be filtered from Z to A"""
+
+
+def test_sort_items_Z_to_A(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.sort_items_Z_to_A()
+
 
 """TC_02.15.03 Make sure that all items can be filtered from low to high"""
 
+
+def test_sort_items_low_to_high(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.sort_items_low_to_high()
+
+
 """TC_02.15.03 Make sure that all items can be filtered from high to low"""
+
+
+def test_sort_items_high_to_low(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.sort_items_high_to_low()
+
 
 """TC_02.16.01 Make sure that the drop-down menu can be opened"""
 
+
+def test_open_drop_down_menu(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.open_drop_down()
+
+
 """TC_02.16.02 Make sure that the drop-down menu can be closed"""
+
+
+def test_close_drop_down(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.close_drop_down()
+
 
 """TC_02.16.03 Make sure that the about page can be opened"""
 
+
+def test_open_about_url(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.open_about_url()
+
 """TC_02.16.04 Make sure that the user is able to logout"""
+
+
+def test_log_out(driver):
+    page = InventoryPage(driver, URL)
+    page.open_page()
+    page.log_out()

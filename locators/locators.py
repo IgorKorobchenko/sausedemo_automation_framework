@@ -27,6 +27,8 @@ class DropDownMenu:
     LOGOUT = (By.XPATH, "//a[@id='logout_sidebar_link']")
     RESET_ALL_APP_STATE = (By.XPATH, "//a[@id='reset_sidebar_link']")
     CLOSE_BTN = (By.XPATH, "//button[text()='Close Menu']")
+    ABOUT_URL = 'https://saucelabs.com/'
+    ABOUT_SAUSE_LOGO = (By.XPATH, '//*[@src="/images/logo.svg"]')
 
 
 class InventoryPageLocators:
@@ -48,6 +50,9 @@ class InventoryPageLocators:
     PRICE_LOW_TO_HIGH = (By.CSS_SELECTOR, 'option[value="lohi"]')
     PRICE_HIGH_TO_LOW = (By.CSS_SELECTOR, 'option[value="hilo"]')
     OPEN_FILTERS = (By.XPATH, "//select[@class='product_sort_container']")
+    INVENTORY_ITEM_NAME = (By.CLASS_NAME, "inventory_item_name")
+    INVENTORY_ITEM_PRICE = (By.CLASS_NAME, "inventory_item_price")
+
     # Items:
     BACKPACK_NAME = (By.XPATH, "//*[text()='Sauce Labs Backpack']")
     BACKPACK_PRODUCT_DESCRIPTION = (By.XPATH, "//*[text()='carry.allTheThings() with the sleek, streamlined Sly Pack "

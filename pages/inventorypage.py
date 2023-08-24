@@ -243,6 +243,78 @@ class InventoryPage(LoginPage):
         self.element_is_present(self.inventory_locators.T_SHIRT_TEST_ALL_THE_THINGS_REMOVE_BTN).click()
         assert self.element_is_present(self.inventory_locators.SHOPPING_CART_CONTAINER)
 
+    def sort_items_a_to_z(self):
+        self.go_to_inventory_page()
+        self.element_is_clickable(self.inventory_locators.OPEN_FILTERS).click()
+        self.element_is_clickable(self.inventory_locators.NAME_A_Z).click()
+        ExpectedResult = []
+        list_of_items = self.elements_are_present(self.inventory_locators.INVENTORY_ITEM_NAME)
+        for title in list_of_items:
+            ExpectedResult.append(title.text)
+        ActualResult = sorted(ExpectedResult)
+        assert (ExpectedResult == ActualResult)
+
+    def sort_items_Z_to_A(self):
+        self.go_to_inventory_page()
+        self.element_is_clickable(self.inventory_locators.OPEN_FILTERS).click()
+        self.element_is_clickable(self.inventory_locators.NAME_Z_A).click()
+        ExpectedResult = []
+        list_of_items = self.elements_are_present(self.inventory_locators.INVENTORY_ITEM_NAME)
+        for title in list_of_items:
+            ExpectedResult.append(title.text)
+        ActualResult = sorted(ExpectedResult, reverse=True)
+        assert (ExpectedResult == ActualResult)
+
+    def sort_items_low_to_high(self):
+        self.go_to_inventory_page()
+        self.element_is_clickable(self.inventory_locators.OPEN_FILTERS).click()
+        self.element_is_clickable(self.inventory_locators.PRICE_LOW_TO_HIGH).click()
+        ExpectedResult = []
+        list_of_items = self.elements_are_present(self.inventory_locators.INVENTORY_ITEM_PRICE)
+        for title in list_of_items:
+            ExpectedResult.append(title.text[1::])
+        ActualResult = sorted(ExpectedResult, key=float)
+        assert (ExpectedResult == ActualResult)
+
+    def sort_items_high_to_low(self):
+        self.go_to_inventory_page()
+        self.element_is_clickable(self.inventory_locators.OPEN_FILTERS).click()
+        self.element_is_clickable(self.inventory_locators.PRICE_HIGH_TO_LOW).click()
+        ExpectedResult = []
+        list_of_items = self.elements_are_present(self.inventory_locators.INVENTORY_ITEM_PRICE)
+        for title in list_of_items:
+            ExpectedResult.append(title.text[1::])
+        ActualResult = sorted(ExpectedResult, key=float, reverse=True)
+        assert (ExpectedResult == ActualResult)
+
+    def open_drop_down(self):
+        self.go_to_inventory_page()
+        self.element_is_clickable(self.dropdown_locators.DROP_DOWN_MENU).click()
+        assert self.element_is_present(self.dropdown_locators.ABOUT)
+
+    def close_drop_down(self):
+        self.go_to_inventory_page()
+        self.element_is_clickable(self.dropdown_locators.DROP_DOWN_MENU).click()
+        self.element_is_clickable(self.dropdown_locators.CLOSE_BTN).click()
+        time.sleep(1)
+        assert self.element_is_present(self.dropdown_locators.DROP_DOWN_MENU)
+
+    def open_about_url(self):
+        self.go_to_inventory_page()
+        self.element_is_clickable(self.dropdown_locators.DROP_DOWN_MENU).click()
+        self.element_is_clickable(self.dropdown_locators.ABOUT).click()
+        assert self.element_is_present(self.dropdown_locators.ABOUT_SAUSE_LOGO)
+
+    def log_out(self):
+        self.go_to_inventory_page()
+        self.element_is_clickable(self.dropdown_locators.DROP_DOWN_MENU).click()
+        self.element_is_clickable(self.dropdown_locators.LOGOUT).click()
+        assert self.element_is_present(self.locators.SWAG_LABS_LOGO)
+
+
+
+
+
 
 
 
