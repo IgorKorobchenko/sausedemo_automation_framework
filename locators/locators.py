@@ -121,6 +121,7 @@ class ShoppingCart:
     DESCRIPTION_LABEL = (By.XPATH, "//*[@class='cart_desc_label']")
     CONTINUE_SHOPPING_BTN = (By.XPATH, '//*[@name="continue-shopping"]')
     CHECKOUT_BTN = (By.XPATH, '//*[@name="checkout"]')
+    SWAG_LABS_LOGO = (By.XPATH, "//*[@class= 'app_logo']")
 
 
 class CheckOutPageStepOne:
