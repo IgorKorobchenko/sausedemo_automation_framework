@@ -132,10 +132,13 @@ class CheckOutPageStepOne:
     FIRST_NAME_INPUT_FIELD = (By.XPATH, "//input[@id='first-name']")
     LAST_NAME_INPUT_FIELD = (By.XPATH, "//input[@id='last-name']")
     ZIP_INPUT_FIELD = (By.XPATH, "//input[@id='postal-code']")
-    ERROR_MESSAGE = (By.XPATH, '//*[text()="Error: First Name is required"]')
+    ERROR_MESSAGE_FIRST_NAME = (By.XPATH, '//*[text()="Error: First Name is required"]')
+    ERROR_MESSAGE_LAST_NAME = (By.XPATH, '//*[text()="Error: Last Name is required"]')
+    ERROR_MESSAGE_ZIP = (By.XPATH, '//*[text()="Error: Postal Code is required"]')
     CLOSE_ERROR_MSG_BTN = (By.XPATH, "//*[@class='error-button']")
     FIRST_NAME = "Carl"
     LAST_NAME = "Cox"
+    ZIP_CODE = "90210"
 
 
 class CheckOutPageStepTwo:
