@@ -67,6 +67,12 @@ class InventoryPage(LoginPage):
         self.element_is_present(self.inventory_locators.BACKPACK_ADD_TO_CART_BTN).click()
         assert self.element_is_present(self.inventory_locators.SHOPPING_CART_BADGE)
 
+    def add_backpack_to_cart_and_open_cart(self):
+        self.go_to_inventory_page()
+        self.element_is_present(self.inventory_locators.BACKPACK_ADD_TO_CART_BTN).click()
+        self.element_is_present(self.inventory_locators.SHOPPING_CART_CONTAINER).click()
+
+
     def bike_light_image_is_present(self):
         self.go_to_inventory_page()
         assert self.element_is_present(self.inventory_locators.BIKE_LIGHT_IMG)

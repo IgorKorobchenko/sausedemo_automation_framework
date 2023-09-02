@@ -42,7 +42,7 @@ class CheckoutStepOnePage(ShoppingCartPage):
     def continue_btn_is_clickable(self):
         self.checkout_btn_is_clickable()
         self.element_is_clickable(self.checkout_step_one_locators.CONTINUE_BTN).click()
-        assert self.element_is_present(self.checkout_step_one_locators.ERROR_MESSAGE)
+        assert self.element_is_present(self.checkout_step_one_locators.ERROR_MESSAGE_FIRST_NAME)
 
     def cancel_btn_is_present_on_checkout_page(self):
         self.checkout_btn_is_clickable()
@@ -63,6 +63,15 @@ class CheckoutStepOnePage(ShoppingCartPage):
             self.checkout_step_one_locators.ZIP_CODE)
         self.element_is_present(self.checkout_step_one_locators.CONTINUE_BTN).click()
         assert self.element_is_present(self.checkout_step_two_locators.CHECKOUT_OVERVIEW_TITLE)
+
+    def ready_registration_form_and_open_overview_page(self):
+        self.element_is_present(self.checkout_step_one_locators.FIRST_NAME_INPUT_FIELD).send_keys(
+            self.checkout_step_one_locators.FIRST_NAME)
+        self.element_is_present(self.checkout_step_one_locators.LAST_NAME_INPUT_FIELD).send_keys(
+            self.checkout_step_one_locators.LAST_NAME)
+        self.element_is_present(self.checkout_step_one_locators.ZIP_INPUT_FIELD).send_keys(
+            self.checkout_step_one_locators.ZIP_CODE)
+        self.element_is_present(self.checkout_step_one_locators.CONTINUE_BTN).click()
 
     def don_not_fill_first_name(self):
         self.checkout_btn_is_clickable()

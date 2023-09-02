@@ -147,11 +147,13 @@ class CheckOutPageStepTwo:
     PAYMENT_INFO_LABEL = (By.XPATH, "//*[text()='Payment Information']")
     PAYMENT_NUMBER = (By.XPATH, "//div[@class='summary_value_label'][1]")
     DELIVERY_COMPANY = (By.XPATH, "//*[text()='Free Pony Express Delivery!']")
+    SHIPPING_INFO_TITLE = (By.XPATH, "//*[text()='Shipping Information']")
     PRICE_TOTAL_LABEL = (By.XPATH, "//*[text()='Price Total']")
     ITEM_TOTAL_LABEL = (By.XPATH, "//*[text()='Item total: $']")
     TAX_LABEL = (By.XPATH, "//*[text()='Tax: $']")
     TOTAL_LABEL = (By.XPATH, "//*[text()='Total: $']")
     FINISH_BTN = (By.XPATH, "//*[@id='finish']")
+    ONE_ITEM = (By.XPATH, "//div[@class='cart_quantity' and text()='1']")
 
 
 class CheckOutCompletePage:
