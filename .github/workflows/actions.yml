@@ -21,7 +21,7 @@ jobs:
       - name: Install poetry
         run: pip install poetry
       - name: Run pytest
-        run: poetry run pytest
+        run: poetry run pytest tests/
         continue-on-error: true
 
 
