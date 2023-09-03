@@ -18,11 +18,11 @@ jobs:
         run: chromium --version
 #      - name: Install poetry
 #        run: curl -sSL https://install.python-poetry.org | python3 -
-#      - name: Install poetry
-#        run: pip install poetry
+      - name: Install poetry
+        run: pip install poetry
       - name: Run pytest
-        run: python -m tests/
-#        run: poetry run pytest tests/
+#        run: python -m tests/
+        run: poetry run pytest
 
 
         
