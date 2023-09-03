@@ -20,14 +20,11 @@ jobs:
         run: curl -sSL https://install.python-poetry.org | python3 -
       - name: Install poetry
         run: pip install poetry
-#      - name: Run pytest
-#        if: always()
-#        run: poetry run pytest tests/
-#      - continue-on-error: true
       - name: Run pytest
-        run: |
-#          source .venv/bin/activate
-          poetry run pytest tests/
+        if: always()
+        run: poetry run pytest tests/
+
+
         
 
 
