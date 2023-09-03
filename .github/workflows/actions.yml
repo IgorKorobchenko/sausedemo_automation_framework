@@ -26,7 +26,7 @@ jobs:
 #      - continue-on-error: true
       - name: Run pytest
         run: |
-          source .venv/bin/activate
+#          source .venv/bin/activate
           poetry run pytest tests/
         
 
