@@ -15,7 +15,7 @@ jobs:
       - name: Install Chrome
         run: sudo apt-get install chromium-browser
       - name: check Chrome version
-        run: chrome --version
+        run: chromium --version
       - name: Install poetry
         run: curl -sSL https://install.python-poetry.org | python3 -
       - name: Install poetry
