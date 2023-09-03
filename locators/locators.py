@@ -150,6 +150,8 @@ class CheckOutPageStepTwo:
     SHIPPING_INFO_TITLE = (By.XPATH, "//*[text()='Shipping Information']")
     PRICE_TOTAL_LABEL = (By.XPATH, "//*[text()='Price Total']")
     ITEM_TOTAL_LABEL = (By.XPATH, "//*[text()='Item total: $']")
+    ITEM_PRICE = (By.XPATH, "//div[@class = 'summary_subtotal_label']")
+    TAX_VALUE = (By.XPATH, "//div[@class = 'summary_tax_label']")
     TAX_LABEL = (By.XPATH, "//*[text()='Tax: $']")
     TOTAL_LABEL = (By.XPATH, "//*[text()='Total: $']")
     FINISH_BTN = (By.XPATH, "//*[@id='finish']")

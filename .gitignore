@@ -1,4 +1,15 @@
 .idea/
-pytest_cache/
+.pytest_cache
 venv/
 .pytestg_cache
+.geckodriver.log
+.pages/__pycache__/check_out_step_one_page.cpython-310.pyc
+.pages/__pycache__/over_view_page.cpython-310.pyc
+.pages/__pycache__/shoppingcart.cpython-310.pyc
+.tests/__pycache__/test_check_out_step_one.cpython-310-pytest-7.4.0.pyc
+.tests/__pycache__/test_overview_page.cpython-310-pytest-7.4.0.pyc
+.tests/geckodriver.log
+
+
+
+
