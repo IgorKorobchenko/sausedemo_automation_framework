@@ -1,0 +1,1 @@
+[![GitHub Actions Saucedemo](https://github.com/IgorKorobchenko/sausedemo_automation_framework/actions/workflows/actions.yml/badge.svg?branch=main)](https://github.com/IgorKorobchenko/sausedemo_automation_framework/actions/workflows/actions.yml)
