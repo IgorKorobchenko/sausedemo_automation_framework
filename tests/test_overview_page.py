@@ -1,9 +1,12 @@
+import pytest
+
 from pages.basepage import URL
 from pages.over_view_page import OverViewPage
 
 """TC_05.01 Make sure that the Checkout: Overview tittle is present"""
 
 
+@pytest.mark.smoke
 def test_overview_title_is_present(driver):
     page = OverViewPage(driver, URL)
     page.open_page()
@@ -112,6 +115,7 @@ def test_item_total_total_is_present(driver):
 """TC_05. Make sure that the item price and item total price are correct"""
 
 
+@pytest.mark.smoke
 def test_item_price_and_item_total_price_are_correct(driver):
     page = OverViewPage(driver, URL)
     page.open_page()
@@ -130,6 +134,7 @@ def test_tax_is_present(driver):
 """TC_05. Make sure that the total price with tax is present and correct"""
 
 
+@pytest.mark.smoke
 def test_total_price_with_tax(driver):
     page = OverViewPage(driver, URL)
     page.open_page()
@@ -148,6 +153,7 @@ def test_cancel_btn_is_present(driver):
 """TC_05. Make sure that the cancel button is clickable and redirects user to the inventory page"""
 
 
+@pytest.mark.smoke
 def test_cancel_btn_is_clickable(driver):
     page = OverViewPage(driver, URL)
     page.open_page()
@@ -166,6 +172,7 @@ def test_finish_btn_is_present(driver):
 """TC_05. Make sure that the Finish button is clickable and order can be complete"""
 
 
+@pytest.mark.smoke
 def test_finish_btn_is_clickable(driver):
     page = OverViewPage(driver, URL)
     page.open_page()

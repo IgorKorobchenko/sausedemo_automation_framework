@@ -228,6 +228,7 @@ class InventoryPage(LoginPage):
         self.element_is_present(self.inventory_locators.ONESIE_NAME_ADD_TO_CART_BTN).click()
         self.element_is_present(self.inventory_locators.T_SHIRT_TEST_ALL_THE_THINGS_ADD_TO_CART_BTN).click()
         assert self.element_is_present(self.inventory_locators.SIX_ITEMS_IN_CART)
+        self.element_is_present(self.inventory_locators.BACKPACK_REMOVE_BTN)
 
     def correct_number_of_items_in_cart_when_removed(self):
         self.add_all_items_to_cart()

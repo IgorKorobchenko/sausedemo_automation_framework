@@ -22,7 +22,7 @@ for instance: pytest -s -v tests/test_login_page.py --browser chrome
 '''Fixture for all browsers'''
 
 
-@pytest.fixture(params=['chrome'], scope="session", autouse=True)
+@pytest.fixture(params=['chrome'], scope="function", autouse=True)
 def driver(request):
     browser = request.config.getoption("--browser")
     options = Options()
@@ -43,10 +43,10 @@ def driver(request):
     yield driver
     driver.quit()
 
-#
-# def pytest_addoption(parser):
-#     parser.addoption("--browser", action="store", default="chrome",
-#                      help="define browser: chrome, firefox, safari or edge")
+
+def pytest_addoption(parser):
+    parser.addoption("--browser", action="store", default="chrome",
+                     help="define browser: chrome, firefox, safari or edge")
 
 
 """Fixture for running tests on Chrome Browser"""

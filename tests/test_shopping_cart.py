@@ -1,5 +1,7 @@
 import time
 
+import pytest
+
 from pages.basepage import URL
 from pages.inventorypage import InventoryPage
 from pages.shoppingcart import ShoppingCartPage
@@ -70,7 +72,7 @@ def test_continue_shopping_btn_is_present(driver):
 """TC_03.07.01 Make sure that the Continue Shopping button is clickable and the user will be redirected to the 
 inventory page"""
 
-
+@pytest.mark.smoke
 def test_continue_shopping_btn_is_clickable(driver):
     page = ShoppingCartPage(driver, URL)
     page.open_page()
@@ -107,7 +109,7 @@ def test_item_with_dscptn_is_present(driver):
 
 """TC_03.10 Make sure that the item can be removed from the cart"""
 
-
+@pytest.mark.smoke
 def test_item_can_be_removed(driver):
     page = ShoppingCartPage(driver, URL)
     page.open_page()
@@ -117,7 +119,7 @@ def test_item_can_be_removed(driver):
 """TC_03.11 Make sure that the checkout button is not clickable if the cart is empty and the user won't be redirected 
 to the step one page """
 
-
+@pytest.mark.smoke
 def test_user_can_NOT_be_redirected_to_step_one(driver):
     page = ShoppingCartPage(driver, URL)
     page.open_page()

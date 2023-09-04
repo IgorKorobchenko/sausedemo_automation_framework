@@ -1,5 +1,7 @@
 import time
 
+import pytest
+
 from pages.inventorypage import InventoryPage
 from pages.basepage import URL
 
@@ -33,6 +35,7 @@ def test_shopping_cart_container_is_present(driver):
 """TC_02.03.01 Make sure that the user will be redirected to the shopping cart page after clicking on the cart sign """
 
 
+@pytest.mark.smoke
 def test_user_is_able_to_launch_shopping_cart(driver):
     page = InventoryPage(driver, URL)
     page.open_page()
@@ -105,6 +108,7 @@ def test_backpack_add_to_cart_btn_is_present(driver):
 """TC_02.06.06 Make sure that the user is able to add the Sauce Labs Backpack to the shopping cart"""
 
 
+@pytest.mark.smoke
 def test_add_backpack_to_cart(driver):
     page = InventoryPage(driver, URL)
     page.open_page()
@@ -441,6 +445,7 @@ def test_correct_number_of_items_in_cart_after_removing(driver):
 """TC_02.14.01 Make sure that the user is able to add all present items to the shopping cart"""
 
 
+@pytest.mark.smoke
 def test_add_all_items_to_cart(driver):
     page = InventoryPage(driver, URL)
     page.open_page()
@@ -450,6 +455,7 @@ def test_add_all_items_to_cart(driver):
 """TC_02.14.02 Make sure that the user is able to remove all present items to the shopping cart"""
 
 
+@pytest.mark.smoke
 def test_remove_all_items(driver):
     page = InventoryPage(driver, URL)
     page.open_page()
@@ -459,6 +465,7 @@ def test_remove_all_items(driver):
 """TC_02.15.01 Make sure that all items can be filtered from A to Z"""
 
 
+@pytest.mark.smoke
 def test_sort_items_a_to_z(driver):
     page = InventoryPage(driver, URL)
     page.open_page()
@@ -468,6 +475,7 @@ def test_sort_items_a_to_z(driver):
 """TC_02.15.02 Make sure that all items can be filtered from Z to A"""
 
 
+@pytest.mark.smoke
 def test_sort_items_Z_to_A(driver):
     page = InventoryPage(driver, URL)
     page.open_page()
@@ -477,6 +485,7 @@ def test_sort_items_Z_to_A(driver):
 """TC_02.15.03 Make sure that all items can be filtered from low to high"""
 
 
+@pytest.mark.smoke
 def test_sort_items_low_to_high(driver):
     page = InventoryPage(driver, URL)
     page.open_page()
@@ -486,6 +495,7 @@ def test_sort_items_low_to_high(driver):
 """TC_02.15.03 Make sure that all items can be filtered from high to low"""
 
 
+@pytest.mark.smoke
 def test_sort_items_high_to_low(driver):
     page = InventoryPage(driver, URL)
     page.open_page()
@@ -495,6 +505,7 @@ def test_sort_items_high_to_low(driver):
 """TC_02.16.01 Make sure that the drop-down menu can be opened"""
 
 
+@pytest.mark.smoke
 def test_open_drop_down_menu(driver):
     page = InventoryPage(driver, URL)
     page.open_page()
@@ -504,6 +515,7 @@ def test_open_drop_down_menu(driver):
 """TC_02.16.02 Make sure that the drop-down menu can be closed"""
 
 
+@pytest.mark.smoke
 def test_close_drop_down(driver):
     page = InventoryPage(driver, URL)
     page.open_page()
@@ -518,9 +530,11 @@ def test_open_about_url(driver):
     page.open_page()
     page.open_about_url()
 
+
 """TC_02.16.04 Make sure that the user is able to logout"""
 
 
+@pytest.mark.smoke
 def test_log_out(driver):
     page = InventoryPage(driver, URL)
     page.open_page()
