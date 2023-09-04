@@ -21,6 +21,10 @@ jobs:
 #        run: chromium --version
 #      - name: Install poetry
 #        run: curl -sSL https://install.python-poetry.org | python3 -
+      - name: install Chrome
+        uses: browser-actions/setup-chrome@latest
+      - name: check Chrome version
+        run: chrome --version
       - name: Install poetry
         run: pip install poetry
 #      - name: Run tests
