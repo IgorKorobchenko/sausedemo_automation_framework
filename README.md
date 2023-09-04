@@ -30,7 +30,7 @@ pytest --alluredir=allure_reports
 6. Change directory: allure generate old directory-o new directory
 
 Useful links:
-1. [About Selenium]:(https://selenium-python.readthedocs.io/)
+1. About Selenium:https://selenium-python.readthedocs.io/
 2. About Pytest: https://pytest.org/en/7.4.x/contents.html
 3. About Python: https://www.python.org/
 
