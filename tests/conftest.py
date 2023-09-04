@@ -51,14 +51,14 @@ for instance: pytest -s -v tests/test_login_page.py --browser chrome
 
 """Fixture for running tests on Chrome Browser"""
 
-@pytest.fixture(scope='session')
-def driver():
-    options = Options()
-    options.add_argument("start-maximized")
-    options.headless = False
-    driver = webdriver.Chrome(options=options)
-    yield driver
-    driver.quit()
+# @pytest.fixture(scope='session')
+# def driver():
+#     options = Options()
+#     options.add_argument("start-maximized")
+#     options.headless = False
+#     driver = webdriver.Chrome(options=options)
+#     yield driver
+#     driver.quit()
 
 
 """Fixture for running tests on Safari Browser.
