@@ -22,31 +22,31 @@ for instance: pytest -s -v tests/test_login_page.py --browser chrome
 '''Fixture for all browsers'''
 
 
-@pytest.fixture(params=['chrome'], scope="session", autouse=True)
-def driver(request):
-    browser = request.config.getoption("--browser")
-    options = Options()
-    options.add_argument("start-maximized")
-    options.headless = False
-
-    if browser == 'chrome':
-        driver = webdriver.Chrome(options=options)
-    elif browser == 'firefox':
-        driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()))
-    elif browser == 'safari':
-        driver = webdriver.Safari()
-    elif browser == 'edge':
-        driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()))
-    else:
-        raise ValueError(f"Browser is not supported: {browser}")
-
-    yield driver
-    driver.quit()
-
-
-def pytest_addoption(parser):
-    parser.addoption("--browser", action="store", default="chrome",
-                     help="define browser: chrome, firefox, safari or edge")
+# @pytest.fixture(params=['chrome'], scope="session", autouse=True)
+# def driver(request):
+#     browser = request.config.getoption("--browser")
+#     options = Options()
+#     options.add_argument("start-maximized")
+#     options.headless = False
+#
+#     if browser == 'chrome':
+#         driver = webdriver.Chrome(options=options)
+#     elif browser == 'firefox':
+#         driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()))
+#     elif browser == 'safari':
+#         driver = webdriver.Safari()
+#     elif browser == 'edge':
+#         driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()))
+#     else:
+#         raise ValueError(f"Browser is not supported: {browser}")
+#
+#     yield driver
+#     driver.quit()
+#
+#
+# def pytest_addoption(parser):
+#     parser.addoption("--browser", action="store", default="chrome",
+#                      help="define browser: chrome, firefox, safari or edge")
 
 
 """Fixture for running tests on Chrome Browser"""
