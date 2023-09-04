@@ -34,3 +34,4 @@ Useful links:
 2. About Pytest: https://pytest.org/en/7.4.x/contents.html
 3. About Python: https://www.python.org/
 
+[![GitHub Actions saucedemo](https://github.com/IgorKorobchenko/sausedemo_automation_framework/actions/workflows/actions.yml/badge.svg?branch=main)](https://github.com/IgorKorobchenko/sausedemo_automation_framework/actions/workflows/actions.yml)
