@@ -21,15 +21,15 @@ jobs:
 #        run: chromium --version
 #      - name: Install poetry
 #        run: curl -sSL https://install.python-poetry.org | python3 -
-      - name: Install poetry
-        run: pip install poetry
-#      - name: Run tests
-#        run: |
+#      - name: Install poetry
+#        run: pip install poetry
+      - name: Run tests
+        run: |
 #          source .venv/bin/activate
-#          pytest tests/
-      - name: Run pytest
-#        run: python -m tests/
-        run: poetry run pytest
+          pytest tests/
+#      - name: Run pytest
+##        run: python -m tests/
+#        run: poetry run pytest
 
 
         
