@@ -36,7 +36,7 @@ def driver(request):
     elif browser == 'safari':
         driver = webdriver.Safari()
     elif browser == 'edge':
-        driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()))
+        driver = webdriver.Edge(service=EdgeService(EdgeChromiumDriverManager().install()))
     else:
         raise ValueError(f"Browser is not supported: {browser}")
 
