@@ -5,8 +5,11 @@ from selenium.webdriver.firefox.service import Service as FirefoxService
 from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.edge.service import Service as EdgeService
+from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
 from webdriver_manager.microsoft import EdgeChromiumDriverManager
+from selenium.webdriver.chrome.service import Service as ChromeService
+
 
 """pytest flags
 -s - prints desired output (pytest -s test_file_name)
@@ -27,10 +30,11 @@ def driver(request):
     browser = request.config.getoption("--browser")
     options = Options()
     options.add_argument("start-maximized")
-    options.headless = False
+    # options.headless = False
+    options.add_argument('--headless')
 
     if browser == 'chrome':
-        driver = webdriver.Chrome(options=options)
+        driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
     elif browser == 'firefox':
         driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()))
     elif browser == 'safari':
